@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+body {
+  text-align: center;
+  background-color: rgb(161, 161, 160);
+}
+.container {
+  width: 600px;
+  margin: 10px auto;
+  border: 5px solid white;
+  overflow: auto;
+}
+.hero {
+  height: 300px;
+  width: 600px;
+}
+.thumb {
+  float: left;
+  width: 200px;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.thumb:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+}
+.active {
+  opacity: 0.5;
+}
